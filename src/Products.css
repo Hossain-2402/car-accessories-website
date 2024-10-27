@@ -1,0 +1,174 @@
+.Products{
+	height:auto;
+	width:100%;
+	margin:10vh 0;
+	overflow-x: hidden;
+}
+
+
+.All_products_header_text{
+	height:10%;
+	width:90%;
+	margin-top: 5vh;
+	margin-left: 50%;
+	transform: translate(-50%,0);
+	border-bottom:2px solid grey;
+	padding:2vh 0;
+	float: left;
+	display: flex;
+}
+.title{
+	font-family: verdana;
+	flex:1;
+	font-weight: 800;
+}
+
+.Products_area{
+	height:auto;
+	width:95%;
+	margin-top: 10vh;
+	margin-left:50%;
+	transform: translate(-50%,0);
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap:5vh 2vw;
+	float: left;
+}
+
+
+.Product{
+	height:70vh;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid grey;
+}
+
+.Product_image{
+	height:40%;
+	width:100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+}
+
+.Product_name{
+	width:90%;
+	float: left;
+	margin-top:2%;
+	font-family: verdana;
+	padding:2vh .5vw;
+}
+
+.Product_catagory{
+	width:90%;
+	float: left;
+	color:#0D6EFD;
+	margin-top:1%;
+	font-family: verdana;
+	text-decoration:none;
+	padding:2vh .5vw;
+}
+
+.Product_brand{
+	width:90%;
+	float: left;
+	margin-top:0%;
+	font-family: verdana;
+	padding:0 .5vw;
+}
+
+.Product_price{
+	width:90%;
+	float: left;
+	margin-top:15%;
+	font-weight: 800;
+	padding:1vh .5vw;
+}
+
+.View_detail_btn{
+	width:60%;
+	padding:.5vh 2vw;
+	border-radius: 10px;
+	border: 2px solid #0D6EFD;
+	text-decoration: none;
+	text-align: center;
+	color:#0D6EFD;
+	float: left;
+	margin-top:10%;
+	margin-left: 50%;
+	transform: translate(-50%,0);
+}
+
+.pageNevBtns{
+	width:90%;
+	margin-top: 10vh;
+	margin-bottom: 2vh;
+	margin-left:50%;
+	transform: translate(-50%,0);
+	float: left;
+	display: flex;
+	gap: 1vw;
+}
+
+.page{
+	padding:2vh 0 ;
+	flex:1;
+	text-align: center;
+	backdrop-filter: blur(15px);
+	border:2px solid #0D6EFD;
+	border-radius: 10px;
+	float: left;
+	cursor: pointer;
+}
+
+@media(max-width:991px){
+	.Products{
+		margin: 10vh 0;
+		padding:10vh 0;
+	}
+
+	.All_products_header_text{
+
+		margin-top: 0vh;
+	}
+
+	.Products_area{
+		height:auto;
+		width:95%;
+		margin-top: 5vh;
+		grid-template-columns: 1fr 1fr;
+		gap:2vh 4vw;
+	}
+
+	.Product{
+		height:50vh;	
+	}
+
+	.Product_image{
+		height:40%;
+	}
+
+	.Product_name{
+		padding:1vh 2vw;
+	}
+
+	.Product_catagory{
+		margin-top: 7%;
+		padding:1vh 2vw;
+	}
+
+	.Product_brand{
+		margin-top: 0;
+		padding:0 2vw;
+	}
+
+	.Product_price{
+		margin-top: 12%;
+		font-size: 17px;
+		padding:0 2vw;
+	}
+
+	.View_detail_btn{
+		margin-top: 7%;
+	}
+}

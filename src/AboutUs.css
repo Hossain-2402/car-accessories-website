@@ -1,0 +1,25 @@
+.AboutUs{
+	height:auto;
+	width:100%;
+	margin:10vh 0;
+}
+.leading_text_for_about_us{
+	height:25vh;
+	padding: 5vh 5vw;
+	margin-top:25vh;
+	border-radius: 10px;
+	font-family: verdana;
+	margin-left: 50%;
+	transform: translate(-50%,0);
+	box-shadow: 0 0 10px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media(max-width:991px){
+	.leading_text_for_about_us{
+		width:90vw;
+		padding:0;
+	}
+}
